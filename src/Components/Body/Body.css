@@ -1,0 +1,83 @@
+.body_container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding:1.7rem;
+    align-items: center;
+    
+}
+.body_heading{
+    font-size: 2rem;
+    font-weight: 500;
+}
+.body_toolber{
+    width: 100%;
+    display: flex;
+    gap: 10rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.colors{
+    display: flex;
+    gap: 1.4rem;
+    padding: 0 2.5rem;
+}
+
+.colors .color{
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+    background-color: #239ce2;
+}
+.body_toolber button{
+    padding: 0.6rem 0.9rem;
+    border-radius: 0.7rem;
+    background-color: #239ce2;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 0.1rem;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    cursor: pointer;
+
+}
+.body_toolber button svg{
+    height: 1.5rem;
+    width: 1.5rem;
+}
+.main{
+    display: flex;
+    /* margin-left: -80px; */
+    flex-direction: column;
+    gap: 30px;
+    /* width: 100%; */
+}
+.activec{
+border: 2px solid black;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .body_heading{
+        font-size: 1.2rem;
+        font-weight: 600;
+        align-items: center;
+        color: #106596;
+   
+    }
+
+    .body_toolber{
+       
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+}

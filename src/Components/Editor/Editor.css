@@ -1,0 +1,148 @@
+.editor_container{
+    width: 840px;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    box-shadow:  1px 4px 4px 4px rgba(46, 45, 48, 0.16);
+    padding-top: 1.3rem;
+    height: fit-content;
+}
+.editor_heading{
+    display: flex;
+    gap: 0.3rem;
+    overflow-x: auto;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+.editor_heading::-webkit-scrollbar{
+    height: 4px;
+}
+.editor_heading::-webkit-scrollbar-thumb{
+    border-radius: 20px;
+    background-color: rgba(165,165,165);
+}
+.editor_heading .section{
+    padding: 1.3rem;
+    border-bottom: 2px solid transparent;
+    font-weight: 550;
+    font-size: 1rem;
+    white-space: nowrap;
+}
+.editor_heading .active{
+    border-bottom: 3px solid #239ce2;
+    color: #239ce2;
+}
+.editor_body{
+    padding: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 0;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+.detail .row{
+    display: flex;
+    gap: 20px;
+}
+.detail .column{
+    display: flex;
+ 
+    flex-direction: column;
+    gap: 10px;
+}
+.detail .row > div{
+    flex: 1;
+}
+.chips{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+gap: 20px;
+}
+.chips .new{
+    color: #239ce2;
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.chip{
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 0.1px 18px;
+    background-color: #808080;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.chip p{
+    font-weight: 400;
+    line-height: 0.1px;
+    color: #fff;
+}
+.chip svg{
+    color: #fff;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+}
+.chips .active{
+    background-color: #239ce2 ;
+}
+.editor_button{
+    width: fit-content;
+    padding: 0.8rem 1.7rem;
+    border-radius: 0.7rem;
+    background-color: #239ce2;
+    color: #fff;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    display: flex;
+    gap: 0.4rem;
+    align-items: center;
+    cursor: pointer;
+    transition: 200ms;
+}
+.editor_button:active{
+    transform: translateY(0.3rem);
+}
+
+@media screen and (max-width: 600px) {
+
+    .editor_container{
+        width: 395px;
+        min-height: 350px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        box-shadow:  1px 4px 4px 4px rgba(46, 45, 48, 0.16);
+        padding-top: 1rem;
+        height: fit-content;
+        margin-left: 10px;
+    }
+    .editor_body{
+        padding:0 1rem ;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 0;
+    }
+    .detail .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .detail .row > div{
+        flex: none;
+    }
+    .editor_button{
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+}
